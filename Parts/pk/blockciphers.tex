@@ -1,0 +1,130 @@
+
+
+\chapter{Block Ciphers}
+
+\begin{definition}[Block Ciphers]\ \\
+    Let $k,n$ be positive integers. A block cipher with key length $k$ and block length $n$ is an efficient keyed permutation 
+    $$F: \{0,1\}^k \times \{0,1\}^n \to \{0,1\}^n$$
+    
+    \textbf{Remark:}
+    \begin{itemize}
+        \item The function $F_K \coloneq F(K,\cdot)$ is a bijection (its inverse is denoted $F_K^{-1}$).
+        \item Both $F_K$ and $F_K^{-1}$ are efficiently computable given the key $K$.
+        \item A secure block cipher should "behave as a pseudorandom permutation".\newline
+    \end{itemize}
+\end{definition}
+
+
+\textbf{A Note on the Concrete Security Setting}\newline
+The key length and block length of block ciphers are fixed $\to$ no varying "security parameter". In practice:
+\begin{itemize}
+    \item actual (not asymptotic) complexity of adversaries is considered.
+    \item a block cipher is considered secure as long as no attack significantly faster than exhaustive key search exists.\newline
+\end{itemize}
+
+
+\begin{definition}[Security Definition - Indistinguishability from a Random Permutation]\ \\
+    A block cipher $F$ with key length $k$ and block length $n$ is $(q,t,\epsilon)$-sprp secure if, for every probabilistic adversary $D$ that runs in time at most $t$ and deals at most $q$ oracle queries, one has
+    $$Adv_F^{sprp}(D) \coloneq \vert Pr[D^{F_K(\cdot),F_K^{-1}(\cdot)}=1]-Pr[D^{f(\cdot),f^{-1}}=1] \vert \leq \epsilon,$$
+    where the first probability is taken over the uniformly random draw of $K$ and the second one over the uniformly random draw of the permutation $f: \{0,1\}^n \to \{0,1\}^n$.\newline
+    
+    \textbf{Remark:}\newline
+    $F$ is considered "secure" as long as $Adv_F^{sprp}(D) \leq c_1 \frac{t/T_F}{2^k} + c_2 \frac{q}{2^n}$, where $c_1$ and $c_2$ are small constants and $T_F$ is an upper bound on the time required to evaluate $F$.\newline
+\end{definition}
+
+
+\textbf{A word on Provable Security}
+\begin{itemize}
+    \item Typically, the security of block ciphers is not provable.
+    \item The pseudorandomness of a block cipher is actually used as an assumption in security proofs for block cipher-based private-key algorithms.
+    \item To build confidence in the pseudorandomness of a block cipher:
+    \begin{itemize}
+        \item decades of cryptanalysis;
+        \item heuristical arguments of security against particular classes of attacks (generic attacks, differential or linear cryptanalysis, ...).\newline
+    \end{itemize}
+\end{itemize}
+
+\newpage
+
+\textbf{Design Principles}
+\begin{itemize}
+    \item Block ciphers should behave as pseudorandom permutations: a 1-bit change in the input should affect every bit of the output (avalanche effect)!
+    \item But block ciphers should be efficient and have a short description.
+    \item Confusion-diffusion paradigm: build a pseudorandom permutation from small random (or random-looking) permutations.
+    \item In practice, the following process, called a round, is applied several times to the input block:
+    \begin{itemize}
+        \item divide the block in small chunks;
+        \item apply small random-looking permutations (called S-boxes) to each chunk of data (confusion);
+        \item mix the bits of the intermediate value to spread the local changes to the whole block (diffusion); this step can be a simple reordering of the bits or the application of a more complex (invertible) linear function.\newline
+    \end{itemize}
+\end{itemize}
+
+
+\textbf{Substitution-Permutation Networks}
+\begin{itemize}
+    \item Practical instantiation of the confusion-diffusion paradigm.
+    \item The S-boxes, key expansion algorithm and linear layer L are public.
+    \item The key is expanded to several subkeys that are mixed with the intermediate values using a bitwise XOR.
+    \item Subkeys are added before each round and after the last one.
+    \item The construction is invertible since both the S-boxes and the linear mixing layer are invertible.\newline
+\end{itemize}
+
+
+\textbf{The Avalanche Effect}
+\begin{itemize}
+    \item Example of design criterion to get the avalanche effect:
+    \begin{itemize}
+        \item the S-boxes are chosen so that changing a single bit of the input changes at least two bits of the output.
+        \item the mixing permutations (in that case simple bit reordering) are chosen so that the output bits of any given S-box are used as input of multiple S-boxes in the next round.
+    \end{itemize}
+    \item Consequence:
+    \begin{itemize}
+        \item a single bit difference between input blocks results in a difference of two bits after one round;
+        \item the second condition ensures that the inputs of at least two S-boxes of the second round will differ by one bit;
+        \item after the second round: at least 4 bits differ between the two blocks;
+        \item in the best case, $2^r$ bits will be affected after $r$ rounds (actually less);
+        \item this gives a lower bound for the number of rounds of an SPN: $$r \geq \lceil \log_2(n) \rceil$$\newline
+    \end{itemize}
+\end{itemize}
+
+
+\textbf{Feistel Networks}
+\begin{itemize}
+    \item Generic iterated structure to build a PRP from round functions.
+    \item Typically, round functions are also constructed from (possibly non-invertible) S-boxes and linear mixing layers.
+    \item Description of a round:
+    \begin{itemize}
+        \item break the block in two equal halves $L_i$ and $R_i$;
+        \item output $(L_{i+1},R_{i+1})$ defined as $L_{i+1} = R_i$ and $R_{i+1} = L_i \oplus f_i(R_i)$, where $f_i$ denotes the $i$-th (public) round function instantiated with a (secret) key $K$.
+    \end{itemize}
+    \item Inherently invertible: $R_i = L_{i+1}$ and $L_i = R_{i+1} \oplus f_i(L_{i+1})$.\newline
+\end{itemize}
+
+
+\begin{theorem}[Feistel Networks]\ \\
+Assuming the round functions are uniformly random and independent
+functions from $\{0,1\}^n$ to $\{0,1\}^n$, then:
+\begin{itemize}
+    \item the $3$-round Feistel construction is $(q,\infty,\frac{q^2}{2^n})$-prp secure;
+    \item the $4$-round Feistel construction is $(q,\infty,\frac{q^2}{2^n})$-sprp secure;
+    \item the $6$-round Feistel construction is $(q,\infty,\frac{9q}{2^n})$-sprp secure secure as long as $q \leq 2^{n-7}$.\newline
+\end{itemize}
+
+\textbf{Interpretation of the theorem:}
+\begin{itemize}
+    \item actual block ciphers have simple round functions that are not random or pseudorandom;
+    \item however, the result justifies the soundness of the Feistel structure;
+    \item it provides lower bounds for the number of rounds that have to be used by an actual block cipher.\newline
+\end{itemize}
+\end{theorem}
+
+
+\textbf{Building Blocks of a Block Cipher}\ \\
+To summarize, the specification of a block cipher generally contains the following ingredients:
+\begin{itemize}
+    \item a high-level (iterated) structure (SPN, Feistel scheme,. . . );
+    \item a key-schedule algorithm to derive sub-keys from a master key;
+    \item small S-boxes that must be non-linear;
+    \item an efficient linear layer to properly spread local changes from the application of the S-boxes.\newline
+\end{itemize}
+

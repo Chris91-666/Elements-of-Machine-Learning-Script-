@@ -1,0 +1,428 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{I\hspace {1em}Basics}{1}{part.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Historical Ciphers}{2}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Substitution Ciphers}{2}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Caesar Cipher}{2}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Vigènere Cipher}{2}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Cryptanalysis}{3}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Frequency Analysis}{3}{section.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Cryptanalysis of the Substitution Cipher}{3}{section.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.7}Summary}{4}{section.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.8}Enigma}{4}{section.1.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.1}General Architecture of Enigma}{5}{subsection.1.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.2}Basic principle}{5}{subsection.1.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.3}Key Size}{5}{subsection.1.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.4}Digital rewriting of Enigma}{6}{subsection.1.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.5}Reflector Permutations}{6}{subsection.1.8.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.6}Rotor Permutations}{7}{subsection.1.8.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.7}Rotor permutations (after rotation)}{8}{subsection.1.8.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.8}Plugboard}{8}{subsection.1.8.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.9}Rotor Evolution}{8}{subsection.1.8.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.10}A simple property of Enigma}{8}{subsection.1.8.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.11}Modern view on Enigma}{9}{subsection.1.8.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.12}Recovering $V_t$ by "cheap" brute force}{9}{subsection.1.8.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.13}Practical Version}{9}{subsection.1.8.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Principles}{10}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Lessons from Historic Ciphers}{10}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Kerkhoff's Principle}{10}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Principles of Modern Cryptography}{10}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Formal Models}{10}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Precise Assumptions}{11}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Summary}{11}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Probability Theory}{12}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Why Randomness and Probability?}{12}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}How can randomization lead to efficient algorithms?}{12}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Probability Spaces}{12}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Set Operations on events}{13}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Properties of Probability Spaces}{13}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Conditional Probabilities and Independence}{13}{section.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Bayes' Rule}{13}{section.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.8}Law of Total Probability}{14}{section.3.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.9}Example: Bayes and LotP in Action}{14}{section.3.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.10}Summary 1}{15}{section.3.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.11}Random Variables}{16}{section.3.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.11.1}Independence of random variables}{16}{subsection.3.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.11.2}Examples}{16}{subsection.3.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.11.3}Defining Probability Spaces via Random Variables}{16}{subsection.3.11.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.11.4}Examples}{17}{subsection.3.11.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.11.5}Sampling Algorithms}{17}{subsection.3.11.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.12}Real-Valued Random Variables and Expectations}{18}{section.3.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.12.1}Linearity of Expectation}{18}{subsection.3.12.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.12.2}Example}{19}{subsection.3.12.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.13}A little detour to Algebra: Finite Groups}{19}{section.3.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.13.1}Groups}{19}{subsection.3.13.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.13.2}Examples of Groups}{19}{subsection.3.13.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.13.3}Random Variables in Groups}{20}{subsection.3.13.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.14}Summary 2}{20}{section.3.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Perfect Secrecy}{21}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Historical Context}{21}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Encryption Schemes (Shannon)}{21}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Encryption Schemes: Correctness}{21}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Security}{21}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Perfect Secrecy: Part I}{22}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}One-Time Pad (OTP)}{22}{subsection.4.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.2}One-Time Pad: Perfect Secrecy}{22}{subsection.4.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.3}One-Time Pad in any Finite Group}{23}{subsection.4.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.4}Why "One-Time Pad"?}{23}{subsection.4.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Summary 1}{23}{section.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Discussion: Perfect Secrecy}{23}{section.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.8}Perfect Secrecy: Part II}{23}{section.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.8.1}Discussion}{24}{subsection.4.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.9}Summary 2}{27}{section.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{II\hspace {1em}Private Key Encryption}{28}{part.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Basics of Private Key Encryption}{29}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Limitations of Perfectly Secret Encryption}{29}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Computational Security: Encryption}{29}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Computationally Secure Encryption}{29}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Concrete Security}{30}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Asymptotic Complexity}{30}{section.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Asymptotic Security}{31}{section.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.1}Examples}{31}{subsection.5.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Computationally Secure Encryption: Asymptotic Indistinguishability Security}{32}{section.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.8}Discussion}{33}{section.5.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.9}Summary}{33}{section.5.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Stream Ciphers}{34}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Pseudorandomness against Simple Statistical Tests}{34}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Examples}{35}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Summary}{36}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Chosen Plaintext Security}{37}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Reusing Keys}{37}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Chosen Plaintext Attacks}{37}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Constructing IND-CPA secure encryption}{38}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Examples}{39}{subsection.7.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Encryption from Pseudorandom Functions}{40}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Summary}{42}{section.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Block Ciphers}{43}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}A Note on the Concrete Security Setting}{43}{section.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Security Definition - Indistinguishability from a Random Permutation}{43}{section.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}A word on Provable Security}{44}{section.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Design Principles}{44}{section.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Substitution-Permutation Networks}{44}{section.8.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.6}The Avalanche Effect}{45}{section.8.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.7}Feistel Networks}{45}{section.8.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.8}Building Blocks of a Block Cipher}{46}{section.8.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.9}Examples}{47}{section.8.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.9.1}Example 1: The DES Block Cipher}{47}{subsection.8.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.9.2}The AES Block Cipher}{49}{subsection.8.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.10}Blockcipher Modes of Operation}{50}{section.8.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.10.1}Using Block-Ciphers}{50}{subsection.8.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.10.2}Electronic Codebook Mode (ECM)}{50}{subsection.8.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.10.3}Cipher Block Chaining (CBC) Mode}{51}{subsection.8.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.10.4}Chained CBC Mode}{51}{subsection.8.10.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.10.5}Output Feedback (OFB) Mode}{52}{subsection.8.10.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.10.6}Counter (CTR) Mode}{52}{subsection.8.10.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.11}Summary}{52}{section.8.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Cryptanalysis}{53}{chapter.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Security goals viewed by Cryptanalysis}{53}{section.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Block Ciphers}{54}{section.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}DES}{55}{section.9.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.1}DES: an outdated but interesting example}{55}{subsection.9.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.2}How to have longer keys?}{55}{subsection.9.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.3}Multiple DES - Diffie-Hellman 77}{55}{subsection.9.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.4}Double DES - Diffie-Hellman 77}{56}{subsection.9.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.4}Finding Collisions in a list or between lists}{56}{section.9.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.5}Triple DES - NIST standard (deprecated, disallowed after 2023)}{57}{section.9.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.6}Linear and Differential Cryptanalysis}{57}{section.9.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.7}Differential Cryptanalysis}{58}{section.9.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.7.1}Fundamentals}{58}{subsection.9.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.7.2}Small example}{59}{subsection.9.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.7.3}Principle of the attack}{59}{subsection.9.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.8}Linear Cryptanalysis}{60}{section.9.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.8.1}Fundamentals}{60}{subsection.9.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.8.2}Small example}{61}{subsection.9.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.8.3}Principle of attack}{61}{subsection.9.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.9}Related Key attacks : Example of DES-X}{62}{section.9.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.10}Arbitrary related key attack model is too strong}{62}{section.9.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Hash Functions}{64}{chapter.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}Fingerprinting}{64}{section.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.1}Examples}{65}{subsection.10.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Idealized Hash Functions}{65}{section.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}The Random Oracle Model}{66}{section.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.1}Examples}{67}{subsection.10.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.4}Summary}{67}{section.10.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.5}A word on Provable Security}{68}{section.10.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.6}The Merkle-Dåmgard construction}{68}{section.10.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.7}The Design of Compression Functions}{69}{section.10.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.8}Sponge Functions}{70}{section.10.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.9}A word on Provable Security}{70}{section.10.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.10}Examples}{71}{section.10.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.10.1}Example 1: The MD5 Hash Function}{71}{subsection.10.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.10.2}Example 2: The SHA-1 Hash Function}{72}{subsection.10.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.10.3}Example 3: The SHA-2 family of Hash Functions}{72}{subsection.10.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.10.4}Example 4: The SHA-3 family of Hash Functions}{73}{subsection.10.10.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.10.4.1}The Keccak-f[200] Permutation}{74}{subsubsection.10.10.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.10.4.2}The avalanche effect of the Keccak-f[1600] Permutation:}{75}{subsubsection.10.10.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.11}Cryptanalysis on Hash Functions}{76}{section.10.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.1}Attacker’s goals against hash functions}{76}{subsection.10.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.2}Random Oracle Model}{76}{subsection.10.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.3}Generic Collisions}{76}{subsection.10.11.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.4}Explanation of birthday paradox}{77}{subsection.10.11.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.5}An example scenario for exploiting collisions: digital signature}{78}{subsection.10.11.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.6}More details}{78}{subsection.10.11.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.7}Memory-less collision finding}{79}{subsection.10.11.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.8}Generic pre-images, second pre-images and one wayness}{80}{subsection.10.11.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.9}Parallel Hash extension}{80}{subsection.10.11.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.11.10}Merkle-Damgard Hash construction}{81}{subsection.10.11.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.11.10.1}Multicollisions on Merkle-Damgard construction}{81}{subsubsection.10.11.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.11.10.2}Parallel Hash extension with a Merkle-Damgard hash}{81}{subsubsection.10.11.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Authentication}{83}{chapter.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}An Attack that doesn’t break Secrecy}{83}{section.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.2}Message Integrity}{83}{section.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.3}Message Authentication Codes}{84}{section.11.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.4}Security of Message Authentication Codes}{84}{section.11.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.5}Using Message Authentication}{86}{section.11.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.6}Summary 1}{86}{section.11.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.7}Constructing Message Authentication Codes}{86}{section.11.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.8}Message Authentication Codes for fixed length messages}{87}{section.11.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.8.1}Security}{87}{subsection.11.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.9}Message Authentication Codes for long Messages}{88}{section.11.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.9.1}Security}{88}{subsection.11.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.10}Message Authentication Codes from Random Oracles}{90}{section.11.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.11}Summary 2}{90}{section.11.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {12}Chosen Ciphertext Security}{91}{chapter.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.1}Encryption and Authentication}{91}{section.12.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.2}Constructing $IND-CCA$ secure encryption}{92}{section.12.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.3}Summary}{94}{section.12.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{III\hspace {1em}Public Key Encryption}{95}{part.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {13}Algebra}{96}{chapter.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.1}Basics of Algebra}{96}{section.13.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.1.1}Ring of integers $\mathbb {Z}$}{96}{subsection.13.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {13.1.1.1}Divisibility}{96}{subsubsection.13.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {13.1.1.2}Euclidean division}{96}{subsubsection.13.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {14}Key Distribution and Key Exchange}{97}{chapter.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.1}Private Key Cryptography}{97}{section.14.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.2}A modest Proposal: Key Distribution Centers}{97}{section.14.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.3}New Directions in Cryptography}{98}{section.14.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.4}Diffie-Hellman Key Exchange}{99}{section.14.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.5}Formal Definitions for Key-Exchange Protocols}{99}{section.14.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.6}Security Definition for Key Exchange}{99}{section.14.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.7}The Decisional Diffie-Hellman (DDH) Assumption}{100}{section.14.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.8}Summary}{100}{section.14.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {15}Public Key Encryption}{101}{chapter.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15.1}Encryption Schemes}{101}{section.15.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15.2}First Proposal}{102}{section.15.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15.3}What about Security?}{102}{section.15.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15.4}Defining Security}{102}{section.15.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15.5}The ElGamal Cryptosystem}{103}{section.15.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15.6}Summary}{105}{section.15.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {16}Hybrid Encryption}{106}{chapter.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16.1}Advantages of Hybrid Encryption}{106}{section.16.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16.2}Key Encapsulation}{107}{section.16.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16.3}Key Encapsulation Mechanisms}{107}{section.16.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16.4}CPA Security for KEMs}{108}{section.16.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16.5}Examples of KEMs}{108}{section.16.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16.6}Public Key Encryption from KEM + Private Key Encryption}{109}{section.16.6}%

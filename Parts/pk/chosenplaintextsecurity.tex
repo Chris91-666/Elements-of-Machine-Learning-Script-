@@ -1,0 +1,65 @@
+
+
+\chapter{Chosen Plaintext Security}
+
+\textbf{Reusing Keys}
+\begin{itemize}
+    \item Stream ciphers have shorter keys than the OTP
+    \item But still keys can only be used once
+    \item How can we make keys reusable?
+    \item First: How should this be modeled in the security definition?\newline
+\end{itemize}
+
+
+\textbf{Chosen Plaintext Attacks}
+\begin{itemize}
+    \item Key-Reuse: Adversary sees many encryptions under the same key
+    \item Not all of them might be unpredictable
+    \item Real Real world scenario: Adversary can influence what honest party encrypts
+    \item Conservative Approach: Let the adversary choose the messages of which he sees encryptions!
+    \item Idea: Give the adversary an \textbf{encryption oracle}\newline
+\end{itemize}
+
+
+\begin{definition}
+    An encryption scheme $(KeyGen,Enc,Dec)$ is $IND-CPA$-secure, if it hol;ds for every $PPT$-adversary $\mathcal{A}$ there exists a negligible function $v$ s.t. for all $\lambda \in \mathbb{N}$
+    $$Pr[IND-CPA_{\mathcal{A}}(\lambda)=1] < \frac{1}{2} + v(\lambda)$$\newline
+\end{definition}
+
+
+\textbf{Constructing IND-CPA secure encryption}
+\begin{itemize}
+    \item Observation: IND CPA secure encryption cannot be deterministic
+    \item Encryption needs to use randomness
+    \item To achieve this stronger security notion, we need stronger ingredient
+    \item PRGs: Small amount of randomness $\Rightarrow$ Larger amount of pseudorandomness
+    \item Needed: Small amount of randomness $\Rightarrow$ (Essentially) unlimited pseudorandomness\newline
+\end{itemize}
+
+
+\begin{definition}[Pseudorandom Functions]\ 
+    \begin{itemize}
+        \item Efficiently computable keyed function (ensemble) $F_K: \{0,1\}^{\lambda} \to \{0,1\}^l$, where $K \in \{0,1\}^{\lambda}$
+        \item Uniformly random function $H: \{0,1\}^{\lambda} \to \{0,1\}^l$
+        \item I.e. for every $x \in \{0,1\}^{\lambda}$ it holds that $H(x)$ is independently uniformly random on $\{0,1\}^l$
+        \item $F$ is a pseudorandom function, if for every oracle PPT distinguisher $\mathcal{D}$ it holds
+        $$\vert Pr[\mathcal{D}^{F_K (\cdot)}(1^{\lambda})=1]-Pr[\mathcal{D}^{H (\cdot)}(1^{\lambda})=1] \vert < negl(\lambda)$$
+        where probability is over choice of $K \leftarrow_{\$} \{0,1\}^{\lambda}$, $H$ and random coins of $\mathcal{D}$.\newline
+    \end{itemize}
+\end{definition}
+
+
+\textbf{Encryption from Pseudorandom Functions}
+\begin{itemize}
+    \item $KeyGen(1^{\lambda})$: Choose $K \leftarrow_{\$} \{0,1\}^{\lambda}$
+    \item $Enc(K,m)$: Choose $r \leftarrow_{\$} \{0,1\}^{\lambda}$, compute and output $c \leftarrow (r,F_K(r) \oplus m)$
+    \item $Dec(K,c)$: Parse $c=(r,y)$, compute and output $m \leftarrow F_K(r) \oplus y$
+    \item \textbf{Correctness:}
+    $$Dec(K,Enc(K,m))=Dec(K,(r,F_K(r) \oplus m))=F_K(r) \oplus F_K(r) \oplus m = m$$\newline
+\end{itemize}
+
+
+\begin{theorem}[IND-CPA Security]\ \\
+$F$ is a pseudorandom function $\Rightarrow$ $(KeyGen,Enc,Dec)$ is IND-CPA secure\newline
+\end{theorem}
+

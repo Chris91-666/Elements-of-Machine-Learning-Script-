@@ -1,0 +1,105 @@
+
+
+\chapter{Principles}
+
+	\section{Lessons from Historic Ciphers}
+		\begin{itemize}
+			\item Ciphers without keys or small key-space cannot recover from compromise
+			\item Ciphertext should not reveal statistical information about plaintexts
+			\item Ciphertexts should not reveal any (efficiently computable) information about the plaintext
+			\item Further thoughts: Many historic ciphers immediately broken given a single message-ciphertext pair
+			\item Ciphers were designed with limited imagination
+			\item \textbf{How do you defend against an adversary who is smarter than you?}
+		\end{itemize}
+	
+	\section{Kerkhoff's Principle}
+		\begin{center}
+			\textbf{The cipher method must not be required to be secret, and it must be able to fall into the hands of the enemy without inconvenience.}
+		\end{center}
+		\begin{itemize}
+			\item Designs which violate Kerkhoff's principle hope to achieve Security by Obscurity
+			\item Today this is considered bad cryptographic design
+			\item It is easier to switch a compromised key than a compromised design
+		\end{itemize}
+	
+	\section{Principles of Modern Cryptography}
+		\begin{itemize}
+			\item \textbf{Formal Definitions/Models}
+				\begin{itemize}
+					\item What constitutes a successful attack?
+					\item What is the goal of an attack?
+				\end{itemize}
+			\item \textbf{Precise Assumptions}
+				\begin{itemize}
+					\item Underlying hard problem?
+				\end{itemize}
+			\item \textbf{Formal Proofs}
+				\begin{itemize}
+					\item Show that a successful attack actually violates the assumptions
+				\end{itemize}
+		\end{itemize}
+	
+	\section{Formal Models}
+		\begin{itemize}
+			\item Example: Encryption
+			\item We will generally define security by defining what it means that a scheme is insecure.
+			\begin{itemize}
+				\item What is the computational power of the adversary?
+				\item What information is given to the adversary?
+				\begin{itemize}
+					\item Only Ciphertext
+					\item A message and a ciphertext encrypting this message
+					\item A ciphertext encrypting a message chosen by the adversary?
+					\item Access to a “decryption oracle”
+				\end{itemize}
+				\item What is the goal of the adversary?
+				\begin{itemize}
+					\item Recover the key
+					\item Recover the message
+					\item Recover parts of the message
+					\item Distinguish encryptions of two messages
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+	
+	\section{Precise Assumptions}
+		\begin{itemize}
+			\item Should it be impossible to break the cipher only hard?
+			\item How can we mathematically define hard problems?
+			\begin{itemize}
+				\item Complexity Theory!
+				\item Example: Factor large numbers
+			\end{itemize}
+			\item A good assumption should be simple to state but hard to break
+		\end{itemize}
+		\textbf{Precise Assumptions let us}
+		\begin{itemize}
+			\item Falsify an assumption by cryptanalysis
+			\item Build confidence by lack of cryptanalysis
+			\item Compare schemes by their underlying assumptions
+			\item Understand the necessity of the assumption
+		\end{itemize}
+	
+	\section{Summary}
+		\begin{itemize}
+			\item Kerkhoff’s principle: Only the key should be secret, not the scheme itself
+			\item Modern cryptography evolved into a discipline following scientific principles
+			\item It lets us design schemes secure against adversaries smarter than ourselves!
+		\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
