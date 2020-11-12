@@ -19,3 +19,7 @@
 \BOOKMARK [2][-]{subsection.1.8.1}{Bayes\040Classifier}{section.1.8}% 19
 \BOOKMARK [1][-]{section.1.9}{Example\040Binary\040Classification}{chapter.1}% 20
 \BOOKMARK [2][-]{subsection.1.9.1}{Nearest\040Neighbors}{section.1.9}% 21
+\BOOKMARK [0][-]{chapter.2}{Linear\040Regression}{}% 22
+\BOOKMARK [1][-]{section.2.1}{Simple\040Linear\040Regression}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.2}{Estimating\040the\040Coefficients}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.3}{Accuracy\040of\040Coefficient\040Estimates}{chapter.2}% 25

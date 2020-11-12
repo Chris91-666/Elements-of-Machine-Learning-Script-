@@ -42,3 +42,11 @@
 \contentsline {section}{\numberline {1.9}Example Binary Classification}{6}{section.1.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.9.1}Nearest Neighbors}{7}{subsection.1.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Linear Regression}{8}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Simple Linear Regression}{8}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Estimating the Coefficients}{8}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Accuracy of Coefficient Estimates}{9}{section.2.3}%
