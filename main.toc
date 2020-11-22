@@ -50,3 +50,9 @@
 \contentsline {section}{\numberline {2.2}Estimating the Coefficients}{8}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Accuracy of Coefficient Estimates}{9}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Unbiased Estimates}{10}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Assessing the Accuracy of Estimates}{10}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Computing Confidence Intervals}{11}{section.2.5}%

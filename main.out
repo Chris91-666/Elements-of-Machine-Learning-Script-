@@ -23,3 +23,6 @@
 \BOOKMARK [1][-]{section.2.1}{Simple\040Linear\040Regression}{chapter.2}% 23
 \BOOKMARK [1][-]{section.2.2}{Estimating\040the\040Coefficients}{chapter.2}% 24
 \BOOKMARK [1][-]{section.2.3}{Accuracy\040of\040Coefficient\040Estimates}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.4}{Unbiased\040Estimates}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.4.1}{Assessing\040the\040Accuracy\040of\040Estimates}{section.2.4}% 27
+\BOOKMARK [1][-]{section.2.5}{Computing\040Confidence\040Intervals}{chapter.2}% 28

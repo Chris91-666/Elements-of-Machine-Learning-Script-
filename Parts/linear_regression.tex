@@ -52,7 +52,12 @@
 			\ \ \ \ \ \ and\ \ \ \ \ \ 
 			$\hat{y} = \frac{1}{n} \sum\limits_{i=1}^n y_i$.
 		\end{center}
-		\includegraphics[width=1.05\linewidth]{Graphics/LinearRegression/1.png}
+		
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=1\linewidth]{Graphics/LinearRegression/1.png}
+			\caption{Contour and 3D plot of the RSS}
+		\end{figure}
 	
 	
 	\section{Accuracy of Coefficient Estimates}
@@ -63,9 +68,86 @@
 		This is the \textbf{population regression line}, the best linear approximation to the true relationship between $X$ and $Y$, given that the true relationship is (*).
 		The population regression line is usually unobserved.\\
 		The least-squares fit on the trining data is given by $\hat{y} = \hat{\beta}_0 + \hat{\beta}_1x$.
+		\begin{figure}[ht]
+		  \centering
+		  \subfloat[][]{\includegraphics[width=0.4\linewidth]{Graphics/LinearRegression/2.png}}
+		  \qquad
+		  \subfloat[][]{\includegraphics[width=0.4\linewidth]{Graphics/LinearRegression/3.png}}
+		\end{figure}
+		For example on figure (a) we see Population regression line (red) and least squares fit (blue) on simulated data $𝑌=2+3𝑋+\epsilon$ with Gaussian error $\epsilon$ with $0$ mean.\\
+		And on figure (b) we see Ten least squares fits on different randomly chosen training data sets.
+	
+	
+	\section{Unbiased Estimates}
+		How do we estimate the mean $\mu$ of a random variable $Y$?
+		\begin{itemize}
+			\item the sample estimate over a finite set of observations is the average
+				\begin{center}
+					$Ave(y_1,y_2,...,y_n) = \frac{1}{n} \sum\limits_{i=1}^n y_i = \bar{y}$
+				\end{center}
+			\item on average, we have $\bar{y}=\mu$. $\bar{y}$ is an unbiased estimate for $\mu$
+		\end{itemize}
+		In same fashion, \textbf{the least-square fit is an unbiased estimate for the population regression line}!
+		\begin{itemize}
+			\item furthermore, among all unbiased linear estimators, the least square fit is the one with the smallest variance (\textbf{Gauss Markov Theorem})
+		\end{itemize}
+	
+	
+		\subsection{Assessing the Accuracy of Estimates}
+			The \textbf{standard error} of $\mu$ is
+			\begin{center}
+				$SE(\mu) = \sqrt{Var(\mu)} = \sqrt{\frac{\sigma^2}{n}}$
+			\end{center}
+			\begin{itemize}
+				\item $\sigma$ population standard deviation
+				item $n$ sample size
+			\end{itemize}
+			We assume (as we usually do) that all observations are independent.\\
+			The \textbf{more} observations we have, the \textbf{smaller} the standard error.\\
+			The standard errors of the least-square coefficients are
+			\begin{center}
+				$SE(\hat{\beta_0})^2 = \sigma^2 \left[\frac{1}{n} + \frac{\bar{x}^2}{\sum\limits_{i=1}^n (x_i - \bar{x})^2}\right]$\\
+				$SE(\hat{\beta_1})^2 = \frac{\sigma^2}{\sum\limits_{i=1}^n (x_i - \bar{x})^2}$
+			\end{center}
+			where $\sigma^2 = Var[\epsilon]$.\\
+			Again we assume (mostly incorrectly) that errors are independent and uncorrelated, with the common variance $\sigma^2$.\\\\
+			\textbf{Observations}
+			\begin{enumerate}
+				\item $SE(\hat{\beta}_1)$ decreases as the $x_i$ are more spread out - the slope is easier to determine.
+				\item $SE(\hat{\beta}_0) = SE(\hat{\mu})$ if $\bar{x} = 0$ in which case $\hat{\beta}_0 = \bar{y}$.
+				\item $\sigma$ is not known but we can provide a sample estimate for it, the residual standard error
+					\begin{center}
+						$RSE = \sqrt{\frac{RSS}{(n-2)}}$
+					\end{center}
+			\end{enumerate}
+			
+\newpage
 
-
-
+		\section{Computing Confidence Intervals}
+			$95\%$ \textbf{confidence interval}
+			\begin{itemize}
+				\item interval that will contain the true value with $95\%$ probability
+				\item limits are computed from the sample (training) data
+			\end{itemize}
+			For the linear regression coefficient $\hat{\beta}_1$ it takes approximately the form
+			\begin{center}
+				$[\hat{\beta}_1 - 2\cdot SE(\hat{\beta}_1)\ ,\ \hat{\beta}_1 + 2 \cdot SE(\hat{\beta}_1)]$
+			\end{center}
+			analogously for $\hat{\beta}_0$
+			\begin{center}
+				$[\hat{\beta}_0 - 2\cdot SE(\hat{\beta}_0)\ ,\ \hat{\beta}_0 + 2 \cdot SE(\hat{\beta}_0)]$
+			\end{center}
+			\textbf{Why} is this the case? (ESL)
+			\begin{itemize}
+				\item we assume that the error in the output is Gaussian distributed
+				\item the coefficient estimates are then also Gaussian distributed (!)
+			\end{itemize}
+			
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=1\linewidth]{Graphics/LinearRegression/4.png}
+				\caption{Probability mass in a Gaussian}
+			\end{figure}
 
 
 
